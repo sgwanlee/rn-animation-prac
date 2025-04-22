@@ -2,6 +2,8 @@ import FlexTest from "@/components/FlexTest";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
+import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
+import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
 import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
 import { Stack } from "expo-router";
@@ -25,7 +27,8 @@ const Index = () => {
       /> */}
       {/* <FlexTest /> */}
       {/* <TiktokMessageContainer /> */}
-      <MyTiktokMessageContainer />
+      {/* <MyTiktokMessageContainer /> */}
+      <VerticalListContainer />
     </View>
   );
 };
