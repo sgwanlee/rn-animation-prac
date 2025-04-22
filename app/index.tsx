@@ -1,4 +1,5 @@
 import FlexTest from "@/components/FlexTest";
+import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
@@ -23,7 +24,8 @@ const Index = () => {
         onIndexChange={(index: number) => setSelectedIndex(index)}
       /> */}
       {/* <FlexTest /> */}
-      <TiktokMessageContainer />
+      {/* <TiktokMessageContainer /> */}
+      <MyTiktokMessageContainer />
     </View>
   );
 };
