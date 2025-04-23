@@ -1,5 +1,6 @@
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
 import FlexTest from "@/components/FlexTest";
+import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
@@ -32,7 +33,8 @@ const Index = () => {
       {/* <MyTiktokMessageContainer /> */}
       {/* <VerticalListContainer /> */}
       {/* <MyVerticalListContainer /> */}
-      <AvailabilityContainer />
+      {/* <AvailabilityContainer /> */}
+      <MyAvailabilityContainer />
     </View>
   );
 };

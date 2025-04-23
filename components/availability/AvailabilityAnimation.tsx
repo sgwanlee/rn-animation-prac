@@ -14,7 +14,7 @@ const _itemSize = 60;
 const _stagger = 75;
 const _loadingColor = "#ddd";
 const _loadingColorWashed = "#eee";
-const getRandomRotation = () => {
+export const getRandomRotation = () => {
   return (Math.random() > 0.5 ? -1 : 1) * Math.random() * 15;
 };
 
