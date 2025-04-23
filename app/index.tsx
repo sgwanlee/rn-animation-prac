@@ -1,3 +1,4 @@
+import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
 import FlexTest from "@/components/FlexTest";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
@@ -14,7 +15,7 @@ import { View } from "react-native";
 const Index = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <View className="flex-1 justify-center">
+    <View className="flex-1 justify-center bg-white">
       <Stack.Screen options={{ headerShown: false }} />
       {/* <Onboarding
         total={4}
@@ -30,7 +31,8 @@ const Index = () => {
       {/* <TiktokMessageContainer /> */}
       {/* <MyTiktokMessageContainer /> */}
       {/* <VerticalListContainer /> */}
-      <MyVerticalListContainer />
+      {/* <MyVerticalListContainer /> */}
+      <AvailabilityContainer />
     </View>
   );
 };
