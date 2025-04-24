@@ -1,4 +1,5 @@
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
+import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
@@ -12,11 +13,19 @@ import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
 import { Stack } from "expo-router";
 import { useState } from "react";
 import { View } from "react-native";
+import {
+  SafeAreaView,
+  useSafeAreaInsets,
+} from "react-native-safe-area-context";
 
 const Index = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const insets = useSafeAreaInsets();
   return (
-    <View className="flex-1 justify-center bg-white">
+    <View
+      className="flex-1 justify-center bg-white"
+      style={{ paddingTop: insets.top }}
+    >
       <Stack.Screen options={{ headerShown: false }} />
       {/* <Onboarding
         total={4}
@@ -34,7 +43,8 @@ const Index = () => {
       {/* <VerticalListContainer /> */}
       {/* <MyVerticalListContainer /> */}
       {/* <AvailabilityContainer /> */}
-      <MyAvailabilityContainer />
+      {/* <MyAvailabilityContainer /> */}
+      <CustomTabsContainer />
     </View>
   );
 };

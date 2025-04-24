@@ -9,3 +9,7 @@ https://www.youtube.com/watch?v=PYwuCLDF75g&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Availability animation
 
 https://www.youtube.com/watch?v=tROYCoYpO58&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=6
+
+# Tabs
+
+https://www.youtube.com/watch?v=zBBMimH6lTc&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=7
