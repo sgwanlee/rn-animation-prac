@@ -1,51 +1,41 @@
-import { Pressable, View } from "react-native";
 import { icons } from "lucide-react-native";
+import { MotiView } from "moti";
+import { Pressable, Text, View } from "react-native";
 import Animated, {
   FadeInRight,
   FadeOutRight,
   LayoutAnimationConfig,
   LinearTransition,
 } from "react-native-reanimated";
-import { MotiProps, MotiView } from "moti";
-import { motifySvg } from "moti/svg";
 
-const _spacing = 4;
+type IconName = keyof typeof icons;
 
-export type IconNames = keyof typeof icons;
-
-type TabItem = {
-  icon: IconNames;
-  label: string;
-};
-
-type TabsProps = {
-  data: TabItem[];
+type MyTabsProps = {
+  data: { icon: IconName; label: string }[];
   selectedIndex: number;
-  onChange: (index: number) => void;
+  onSelect: (index: number) => void;
   activeColor?: string;
   inactiveColor?: string;
   activeBackgroundColor?: string;
   inactiveBackgroundColor?: string;
 };
-type IconProps = {
-  name: IconNames;
-} & MotiProps;
-const Icon = ({ name, ...rest }: IconProps) => {
-  const IconComponent = motifySvg(icons[name] as any)();
-  return <IconComponent size={16} {...rest} />;
+
+const Icon = ({ name }: { name: IconName }) => {
+  const IconComponent = icons[name];
+  return <IconComponent />;
 };
 
-const Tabs = ({
+const MyTabs = ({
   data,
   selectedIndex,
-  onChange,
-  activeBackgroundColor = "#111",
-  inactiveBackgroundColor = "#ddd",
+  onSelect,
   activeColor = "#fff",
   inactiveColor = "#999",
-}: TabsProps) => {
+  activeBackgroundColor = "#111",
+  inactiveBackgroundColor = "#ddd",
+}: MyTabsProps) => {
   return (
-    <View className="flex-row gap-1">
+    <View className="flex-row gap-2">
       {data.map((item, index) => {
         const isSelected = selectedIndex === index;
         return (
@@ -61,25 +51,16 @@ const Tabs = ({
             layout={LinearTransition.springify().damping(80).stiffness(200)}
           >
             <Pressable
-              style={{
-                padding: _spacing * 3,
-                justifyContent: "center",
-                alignItems: "center",
-                gap: _spacing,
-                flexDirection: "row",
-              }}
-              onPress={() => onChange(index)}
+              className="flex-row p-3 justify-center items-center gap-2"
+              onPress={() => onSelect(index)}
             >
-              <Icon
-                name={item.icon}
-                animate={{
-                  color: isSelected ? activeColor : inactiveColor,
-                }}
-              />
+              <Icon name={item.icon} />
               <LayoutAnimationConfig skipEntering>
                 {isSelected && (
                   <Animated.Text
-                    style={{ color: isSelected ? activeColor : inactiveColor }}
+                    style={{
+                      color: isSelected ? activeColor : inactiveColor,
+                    }}
                     entering={FadeInRight.springify()
                       .damping(80)
                       .stiffness(200)}
@@ -99,4 +80,4 @@ const Tabs = ({
   );
 };
 
-export default Tabs;
+export default MyTabs;

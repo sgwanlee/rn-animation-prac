@@ -7,21 +7,14 @@ import Animated, {
   FadeOutRight,
   LayoutAnimationConfig,
 } from "react-native-reanimated";
-
-const tabs = ["#ff005c", "#ffbd00", "#00b3e6", "#00cc96", "gold"];
+import { tabData, tabs } from "./data";
 
 const CustomTabsContainer = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <View className="flex-1 p-4 m-1 gap-2">
       <Tabs
-        data={[
-          { icon: "LifeBuoy", label: "Buoy" },
-          { icon: "Fish", label: "Fresh fish" },
-          { icon: "Sailboat", label: "Sail" },
-          { icon: "Ship", label: "Ship it" },
-          { icon: "ShipWheel", label: "Manage it" },
-        ]}
+        data={tabData}
         selectedIndex={selectedIndex}
         onChange={(index) => {
           setSelectedIndex(index);

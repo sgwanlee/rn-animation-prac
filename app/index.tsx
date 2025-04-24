@@ -2,6 +2,7 @@ import AvailabilityContainer from "@/components/availability/AvailabilityContain
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
+import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
@@ -45,6 +46,7 @@ const Index = () => {
       {/* <AvailabilityContainer /> */}
       {/* <MyAvailabilityContainer /> */}
       <CustomTabsContainer />
+      {/* <MyCustomTabsContainer /> */}
     </View>
   );
 };
