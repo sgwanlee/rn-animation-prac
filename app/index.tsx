@@ -15,6 +15,7 @@ import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
+import SwitchContainer from "@/components/switch/SwitchContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
 import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
 import WebViewTest from "@/components/WebViewTest";
@@ -60,7 +61,8 @@ const Index = () => {
       {/* <LeaderboardContainer /> */}
       {/* <MyLeaderboardContainer /> */}
       {/* <LoadingContainer /> */}
-      <MyLoadingContainer />
+      {/* <MyLoadingContainer /> */}
+      <SwitchContainer />
     </View>
   );
 };

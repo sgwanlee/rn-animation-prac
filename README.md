@@ -25,3 +25,7 @@ https://www.youtube.com/watch?v=ycnnhfHO8wU&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Loading
 
 https://www.youtube.com/watch?v=e5_auZoh85w&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=13
+
+# Switch
+
+https://www.youtube.com/watch?v=LwKUjau3Ifw&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=14
