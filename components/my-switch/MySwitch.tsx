@@ -1,17 +1,13 @@
-import { Pressable, Text, View } from "react-native";
-import { MotiTransitionProp, MotiView } from "moti";
 import { useMemo } from "react";
+import { Pressable, View } from "react-native";
+import { _colors } from "../switch/Switch";
 import { Easing } from "react-native-reanimated";
-
-export const _colors = {
-  active: "#2c2c2c",
-  inactive: "#dcdcdc",
-};
+import { MotiTransitionProp, MotiView } from "moti";
 
 interface Props {
   size: number;
-  onPress: () => void;
   isActive: boolean;
+  onPress: () => void;
 }
 
 const transition: MotiTransitionProp = {
@@ -20,27 +16,28 @@ const transition: MotiTransitionProp = {
   easing: Easing.inOut(Easing.ease),
 };
 
-const Switch = ({ size, onPress, isActive }: Props) => {
+const MySwitch = ({ size, isActive, onPress }: Props) => {
   const trackWidth = useMemo(() => size * 1.5, [size]);
-  const trackHeight = useMemo(() => size * 0.4, [size]);
-  const knobSize = useMemo(() => size * 0.6, [size]);
+  const trackHeight = useMemo(() => size * 0.6, [size]);
+  const knobSize = useMemo(() => size * 0.4, [size]);
 
   return (
     <Pressable onPress={onPress}>
-      <View className="justify-center items-center">
+      <View className="items-center justify-center">
         {/* Track */}
         <MotiView
+          transition={transition}
           animate={{
             backgroundColor: isActive ? _colors.active : _colors.inactive,
           }}
-          transition={transition}
           style={{
-            position: "absolute",
             width: trackWidth,
             height: trackHeight,
             borderRadius: trackHeight / 2,
+
+            position: "absolute",
           }}
-        ></MotiView>
+        />
         {/* Knob */}
         <MotiView
           transition={transition}
@@ -56,7 +53,7 @@ const Switch = ({ size, onPress, isActive }: Props) => {
             justifyContent: "center",
           }}
         >
-          {/* Knob indicator */}
+          {/* Knob Indicator */}
           <MotiView
             transition={transition}
             animate={{
@@ -68,7 +65,6 @@ const Switch = ({ size, onPress, isActive }: Props) => {
               height: knobSize,
               borderRadius: knobSize / 2,
               borderWidth: size * 0.1,
-              borderColor: isActive ? _colors.active : _colors.inactive,
               backgroundColor: "#fff",
             }}
           />
@@ -78,4 +74,4 @@ const Switch = ({ size, onPress, isActive }: Props) => {
   );
 };
 
-export default Switch;
+export default MySwitch;

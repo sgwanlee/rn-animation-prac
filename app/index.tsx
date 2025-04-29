@@ -10,6 +10,7 @@ import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsConta
 import MyLeaderboardContainer from "@/components/my-leaderboard/MyLeaderboardContainer";
 import MyLoadingContainer from "@/components/my-loading/MyLoadingContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
+import MySwitchContainer from "@/components/my-switch/MySwitchContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
@@ -62,7 +63,8 @@ const Index = () => {
       {/* <MyLeaderboardContainer /> */}
       {/* <LoadingContainer /> */}
       {/* <MyLoadingContainer /> */}
-      <SwitchContainer />
+      {/* <SwitchContainer /> */}
+      <MySwitchContainer />
     </View>
   );
 };
