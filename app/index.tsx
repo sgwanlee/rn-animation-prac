@@ -8,6 +8,7 @@ import MyAvailabilityContainer from "@/components/my-availability/MyAvailability
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
 import MyLeaderboardContainer from "@/components/my-leaderboard/MyLeaderboardContainer";
+import MyLoadingContainer from "@/components/my-loading/MyLoadingContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
@@ -58,7 +59,8 @@ const Index = () => {
       {/* <WebViewTest /> */}
       {/* <LeaderboardContainer /> */}
       {/* <MyLeaderboardContainer /> */}
-      <LoadingContainer />
+      {/* <LoadingContainer /> */}
+      <MyLoadingContainer />
     </View>
   );
 };
