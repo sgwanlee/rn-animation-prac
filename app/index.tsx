@@ -2,6 +2,7 @@ import AvailabilityContainer from "@/components/availability/AvailabilityContain
 import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
+import LeaderboardContainer from "@/components/leader_board/LeaderboardContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
@@ -50,9 +51,10 @@ const Index = () => {
       {/* <MyAvailabilityContainer /> */}
       {/* <CustomTabsContainer /> */}
       {/* <MyCustomTabsContainer /> */}
-      <CounterContainer />
-      <MyCounterContainer />
+      {/* <CounterContainer /> */}
+      {/* <MyCounterContainer /> */}
       {/* <WebViewTest /> */}
+      <LeaderboardContainer />
     </View>
   );
 };
