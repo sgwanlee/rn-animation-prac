@@ -21,3 +21,7 @@ https://www.youtube.com/watch?v=Rv91NdVtnsw&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Leaderboard
 
 https://www.youtube.com/watch?v=ycnnhfHO8wU&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=12
+
+# Loading
+
+https://www.youtube.com/watch?v=e5_auZoh85w&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=13
