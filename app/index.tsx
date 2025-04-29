@@ -3,6 +3,7 @@ import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
+import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
@@ -50,6 +51,7 @@ const Index = () => {
       {/* <CustomTabsContainer /> */}
       {/* <MyCustomTabsContainer /> */}
       <CounterContainer />
+      <MyCounterContainer />
       {/* <WebViewTest /> */}
     </View>
   );
