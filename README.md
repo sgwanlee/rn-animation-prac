@@ -17,3 +17,7 @@ https://www.youtube.com/watch?v=zBBMimH6lTc&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Counter
 
 https://www.youtube.com/watch?v=Rv91NdVtnsw&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=8
+
+# Leaderboard
+
+https://www.youtube.com/watch?v=ycnnhfHO8wU&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=12
