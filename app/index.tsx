@@ -1,4 +1,5 @@
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
+import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
@@ -11,6 +12,7 @@ import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
 import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
+import WebViewTest from "@/components/WebViewTest";
 import { Stack } from "expo-router";
 import { useState } from "react";
 import { View } from "react-native";
@@ -45,8 +47,10 @@ const Index = () => {
       {/* <MyVerticalListContainer /> */}
       {/* <AvailabilityContainer /> */}
       {/* <MyAvailabilityContainer /> */}
-      <CustomTabsContainer />
+      {/* <CustomTabsContainer /> */}
       {/* <MyCustomTabsContainer /> */}
+      <CounterContainer />
+      {/* <WebViewTest /> */}
     </View>
   );
 };
