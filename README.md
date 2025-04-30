@@ -29,3 +29,7 @@ https://www.youtube.com/watch?v=e5_auZoh85w&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Switch
 
 https://www.youtube.com/watch?v=LwKUjau3Ifw&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=14
+
+# Gallery
+
+https://www.youtube.com/watch?v=gjC2oUJhePE&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=16

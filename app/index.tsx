@@ -2,6 +2,7 @@ import AvailabilityContainer from "@/components/availability/AvailabilityContain
 import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
+import GalleryContainer from "@/components/gallery/GalleryContainer";
 import LeaderboardContainer from "@/components/leader_board/LeaderboardContainer";
 import LoadingContainer from "@/components/loading/LoadingContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
@@ -34,7 +35,7 @@ const Index = () => {
   return (
     <View
       className="flex-1 justify-center bg-white"
-      style={{ paddingTop: insets.top }}
+      // style={{ paddingTop: insets.top }}
     >
       <Stack.Screen options={{ headerShown: false }} />
       {/* <Onboarding
@@ -64,7 +65,8 @@ const Index = () => {
       {/* <LoadingContainer /> */}
       {/* <MyLoadingContainer /> */}
       {/* <SwitchContainer /> */}
-      <MySwitchContainer />
+      {/* <MySwitchContainer /> */}
+      <GalleryContainer />
     </View>
   );
 };
