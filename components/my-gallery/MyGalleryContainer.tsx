@@ -1,18 +1,16 @@
-import { useEffect, useRef, useState } from "react";
 import {
   Dimensions,
   FlatList,
   Image,
-  StyleSheet,
   Text,
-  TouchableOpacity,
+  StyleSheet,
   View,
+  TouchableOpacity,
 } from "react-native";
+import { API_URL } from "../gallery/GalleryContainer";
+import { useEffect, useRef, useState } from "react";
 
 const { width, height } = Dimensions.get("screen");
-
-export const API_URL =
-  "https://api.pexels.com/v1/search?query=nature&orientation=portrait&size=small&per_page=20";
 const IMAGE_SIZE = 80;
 const SPACING = 10;
 
@@ -22,52 +20,53 @@ const fetchImagesFromPexels = async () => {
       Authorization: process.env.EXPO_PUBLIC_PEXCEL_API_KEY!,
     },
   });
+
   const { photos } = await data.json();
   return photos;
 };
 
-const GalleryContainer = () => {
-  const [images, setImages] = useState(null);
+const MyGalleryContainer = () => {
+  const [images, setImages] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const topRef = useRef<FlatList>(null);
-  const thumbRef = useRef<FlatList>(null);
+  const bottomRef = useRef<FlatList>(null);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      const images = await fetchImagesFromPexels();
+      console.log(images);
+      setImages(images);
+    };
+    fetchImages();
+  }, []);
 
   const scrollToActiveIndex = (index: number) => {
     setActiveIndex(index);
+
     topRef.current?.scrollToOffset({
       offset: index * width,
       animated: true,
     });
+
     if (index * (IMAGE_SIZE + SPACING) - IMAGE_SIZE / 2 > width / 2) {
-      // Middle of a thumbnail is greater than half of the screen
-      thumbRef.current?.scrollToOffset({
+      bottomRef.current?.scrollToOffset({
         offset: index * (IMAGE_SIZE + SPACING) - width / 2 + IMAGE_SIZE / 2,
         animated: true,
       });
     } else {
-      // Middle of a thumbnail is less than half of the screen
-      thumbRef.current?.scrollToOffset({
+      bottomRef.current?.scrollToOffset({
         offset: 0,
         animated: true,
       });
     }
   };
 
-  useEffect(() => {
-    const fetchImages = async () => {
-      const images = await fetchImagesFromPexels();
-      setImages(images);
-      console.log(images);
-    };
-    fetchImages();
-  }, []);
-
   if (!images) {
     return <Text>Loading...</Text>;
   }
 
   return (
-    <View className="flex-1 bg-white">
+    <View className="flex-1">
       <FlatList
         ref={topRef}
         data={images}
@@ -75,11 +74,6 @@ const GalleryContainer = () => {
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id.toString()}
-        onMomentumScrollEnd={(ev) => {
-          scrollToActiveIndex(
-            Math.floor(ev.nativeEvent.contentOffset.x / width)
-          );
-        }}
         renderItem={({ item }) => {
           return (
             <View style={{ width, height }}>
@@ -91,31 +85,24 @@ const GalleryContainer = () => {
           );
         }}
       />
+
       <FlatList
-        ref={thumbRef}
+        ref={bottomRef}
         data={images}
         horizontal
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => item.id.toString()}
-        style={{
-          position: "absolute",
-          bottom: IMAGE_SIZE,
-          paddingHorizontal: SPACING,
-        }}
+        style={{ position: "absolute", bottom: IMAGE_SIZE }}
         renderItem={({ item, index }) => {
           return (
-            <TouchableOpacity
-              onPress={() => {
-                scrollToActiveIndex(index);
-              }}
-            >
+            <TouchableOpacity onPress={() => scrollToActiveIndex(index)}>
               <Image
                 source={{ uri: item.src.portrait }}
                 style={{
                   width: IMAGE_SIZE,
                   height: IMAGE_SIZE,
-                  borderRadius: 12,
                   marginRight: SPACING,
+                  borderRadius: 12,
                   borderWidth: 2,
                   borderColor: index === activeIndex ? "white" : "transparent",
                 }}
@@ -128,4 +115,4 @@ const GalleryContainer = () => {
   );
 };
 
-export default GalleryContainer;
+export default MyGalleryContainer;

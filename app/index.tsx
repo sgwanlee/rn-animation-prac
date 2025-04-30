@@ -8,6 +8,7 @@ import LoadingContainer from "@/components/loading/LoadingContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
+import MyGalleryContainer from "@/components/my-gallery/MyGalleryContainer";
 import MyLeaderboardContainer from "@/components/my-leaderboard/MyLeaderboardContainer";
 import MyLoadingContainer from "@/components/my-loading/MyLoadingContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
@@ -66,7 +67,8 @@ const Index = () => {
       {/* <MyLoadingContainer /> */}
       {/* <SwitchContainer /> */}
       {/* <MySwitchContainer /> */}
-      <GalleryContainer />
+      {/* <GalleryContainer /> */}
+      <MyGalleryContainer />
     </View>
   );
 };
