@@ -1,4 +1,6 @@
+import AppleInvitesContainer from "@/components/apple-invites/AppleInvitesContainer";
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
+import CircularCarouselContainer from "@/components/circular-carousel/CircularCarouselContainer";
 import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
@@ -18,6 +20,7 @@ import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
+import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
 import SwitchContainer from "@/components/switch/SwitchContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
 import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
@@ -36,7 +39,7 @@ const Index = () => {
   return (
     <View
       className="flex-1 justify-center bg-white"
-      // style={{ paddingTop: insets.top }}
+      style={{ paddingTop: insets.top }}
     >
       <Stack.Screen options={{ headerShown: false }} />
       {/* <Onboarding
@@ -68,7 +71,10 @@ const Index = () => {
       {/* <SwitchContainer /> */}
       {/* <MySwitchContainer /> */}
       {/* <GalleryContainer /> */}
-      <MyGalleryContainer />
+      {/* <MyGalleryContainer /> */}
+      {/* <SharedElementsContainer /> */}
+      <AppleInvitesContainer />
+      {/* <CircularCarouselContainer /> */}
     </View>
   );
 };
