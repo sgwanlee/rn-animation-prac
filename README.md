@@ -33,3 +33,7 @@ https://www.youtube.com/watch?v=LwKUjau3Ifw&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Gallery
 
 https://www.youtube.com/watch?v=gjC2oUJhePE&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_TvAX&index=16
+
+# Apple invites
+
+https://www.youtube.com/watch?v=P_gYeiFipsk&t=237s

@@ -7,6 +7,7 @@ import FlexTest from "@/components/FlexTest";
 import GalleryContainer from "@/components/gallery/GalleryContainer";
 import LeaderboardContainer from "@/components/leader_board/LeaderboardContainer";
 import LoadingContainer from "@/components/loading/LoadingContainer";
+import MyAppleInvitesContainer from "@/components/my-apple-invites/MyAppleInvitesContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
@@ -73,7 +74,8 @@ const Index = () => {
       {/* <GalleryContainer /> */}
       {/* <MyGalleryContainer /> */}
       {/* <SharedElementsContainer /> */}
-      <AppleInvitesContainer />
+      {/* <AppleInvitesContainer /> */}
+      <MyAppleInvitesContainer />
       {/* <CircularCarouselContainer /> */}
     </View>
   );

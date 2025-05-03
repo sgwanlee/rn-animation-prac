@@ -45,7 +45,8 @@ const Item = ({
           rotate: `${interpolate(
             range,
             [-_itemSize, (width - _itemSize) / 2, width],
-            [-3, 0, 3]
+            [-3, 0, 3],
+            "clamp"
           )}deg`,
         },
       ],
