@@ -37,3 +37,7 @@ https://www.youtube.com/watch?v=gjC2oUJhePE&list=PLQocKVqyqZDSCyzTX6QYZ5k5GBv4_T
 # Apple invites
 
 https://www.youtube.com/watch?v=P_gYeiFipsk&t=237s
+
+# Circular carousel
+
+https://www.youtube.com/watch?v=FkY4bA8sZRo

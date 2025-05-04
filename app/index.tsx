@@ -9,6 +9,7 @@ import LeaderboardContainer from "@/components/leader_board/LeaderboardContainer
 import LoadingContainer from "@/components/loading/LoadingContainer";
 import MyAppleInvitesContainer from "@/components/my-apple-invites/MyAppleInvitesContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
+import MyCircularCarouselContainer from "@/components/my-circular-carousel/MyCircularCarouselContainer";
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
 import MyGalleryContainer from "@/components/my-gallery/MyGalleryContainer";
@@ -40,7 +41,7 @@ const Index = () => {
   return (
     <View
       className="flex-1 justify-center bg-white"
-      style={{ paddingTop: insets.top }}
+      // style={{ paddingTop: insets.top }}
     >
       <Stack.Screen options={{ headerShown: false }} />
       {/* <Onboarding
@@ -75,8 +76,9 @@ const Index = () => {
       {/* <MyGalleryContainer /> */}
       {/* <SharedElementsContainer /> */}
       {/* <AppleInvitesContainer /> */}
-      <MyAppleInvitesContainer />
+      {/* <MyAppleInvitesContainer /> */}
       {/* <CircularCarouselContainer /> */}
+      <MyCircularCarouselContainer />
     </View>
   );
 };
