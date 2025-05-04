@@ -22,6 +22,7 @@ import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
+import ScheduleContainer from "@/components/scheduler/ScheduleContainer";
 import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
 import SwitchContainer from "@/components/switch/SwitchContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
@@ -78,7 +79,8 @@ const Index = () => {
       {/* <AppleInvitesContainer /> */}
       {/* <MyAppleInvitesContainer /> */}
       {/* <CircularCarouselContainer /> */}
-      <MyCircularCarouselContainer />
+      {/* <MyCircularCarouselContainer /> */}
+      <ScheduleContainer />
     </View>
   );
 };
