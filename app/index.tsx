@@ -16,6 +16,7 @@ import MyGalleryContainer from "@/components/my-gallery/MyGalleryContainer";
 import MyLeaderboardContainer from "@/components/my-leaderboard/MyLeaderboardContainer";
 import MyLoadingContainer from "@/components/my-loading/MyLoadingContainer";
 import MyVerticalListContainer from "@/components/my-perflexity-vertical-list/MyVerticalListContainer";
+import MyScheduleContainer from "@/components/my-schedule/MyScheduleContainer";
 import MySwitchContainer from "@/components/my-switch/MySwitchContainer";
 import MyTiktokMessageContainer from "@/components/my-tictok-messages/MyTiktokMessageContainer";
 import Onboarding from "@/components/Onboarding";
@@ -81,6 +82,7 @@ const Index = () => {
       {/* <CircularCarouselContainer /> */}
       {/* <MyCircularCarouselContainer /> */}
       <ScheduleContainer />
+      <MyScheduleContainer />
     </View>
   );
 };
