@@ -1,6 +1,7 @@
 import AppleInvitesContainer from "@/components/apple-invites/AppleInvitesContainer";
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
 import CircularCarouselContainer from "@/components/circular-carousel/CircularCarouselContainer";
+import ClockContainer from "@/components/clock/ClockContainer";
 import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
@@ -10,6 +11,7 @@ import LoadingContainer from "@/components/loading/LoadingContainer";
 import MyAppleInvitesContainer from "@/components/my-apple-invites/MyAppleInvitesContainer";
 import MyAvailabilityContainer from "@/components/my-availability/MyAvailabilityContainer";
 import MyCircularCarouselContainer from "@/components/my-circular-carousel/MyCircularCarouselContainer";
+import MyClockContainer from "@/components/my-clock/MyClockContainer";
 import MyCounterContainer from "@/components/my-counter/MyCounterContainer";
 import MyCustomTabsContainer from "@/components/my-custom-tabs/MyCustomTabsContainer";
 import MyGalleryContainer from "@/components/my-gallery/MyGalleryContainer";
@@ -81,8 +83,10 @@ const Index = () => {
       {/* <MyAppleInvitesContainer /> */}
       {/* <CircularCarouselContainer /> */}
       {/* <MyCircularCarouselContainer /> */}
-      <ScheduleContainer />
-      <MyScheduleContainer />
+      {/* <ScheduleContainer /> */}
+      {/* <MyScheduleContainer /> */}
+      {/* <ClockContainer /> */}
+      <MyClockContainer />
     </View>
   );
 };
