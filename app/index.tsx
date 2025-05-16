@@ -27,6 +27,7 @@ import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
 import ScheduleContainer from "@/components/scheduler/ScheduleContainer";
 import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
+import StickyContainer from "@/components/sticky/StickyContainer";
 import SwitchContainer from "@/components/switch/SwitchContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
 import TikTokMessages from "@/components/tictok-messages/TikTokMessages";
@@ -86,7 +87,8 @@ const Index = () => {
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
       {/* <ClockContainer /> */}
-      <MyClockContainer />
+      {/* <MyClockContainer /> */}
+      <StickyContainer />
     </View>
   );
 };
