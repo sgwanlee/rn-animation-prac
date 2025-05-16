@@ -49,3 +49,7 @@ https://www.youtube.com/watch?v=F3KJNgINMIQ
 # Clock
 
 https://www.youtube.com/watch?v=W6yvb-oAq48&list=PLC_Hfj08XtG59wNm-rs6KbHyLfC09vaIN
+
+# Sticky
+
+https://www.youtube.com/watch?v=4Pw4du1IrDs
