@@ -6,6 +6,8 @@ import ScrollViewPrac from "./ScrollViewPrac";
 import ColorPrac from "./ColorPrac";
 import PinchGesturePrac from "./PinchGesturePrac";
 import DoubleTapPrac from "./DoubleTapPrac";
+import PanGesturePrac from "./PanGesturePrac";
+import ColorPickerPrac from "./ColorPickerPrac";
 
 const ReanimatedTutorialContainer = () => {
   return (
@@ -16,7 +18,9 @@ const ReanimatedTutorialContainer = () => {
       {/* <ScrollViewPrac /> */}
       {/* <ColorPrac/> */}
       {/* <PinchGesturePrac /> */}
-      <DoubleTapPrac />
+      {/* <DoubleTapPrac /> */}
+      {/* <PanGesturePrac /> */}
+      <ColorPickerPrac />
     </View>
   );
 };

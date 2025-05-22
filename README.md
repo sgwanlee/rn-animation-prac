@@ -53,3 +53,5 @@ ScrolViewPrac: https://www.youtube.com/watch?v=SqwpRr7kbnQ&list=PLjHsmVtnAr9TWoM
 Color: https://www.youtube.com/watch?v=U_V9pHnTXjA&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=4
 PinchGesture: https://www.youtube.com/watch?v=R7vyLItMQJw&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=5
 DoubleTab: https://www.youtube.com/watch?v=nbEmo0zLJjw&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=6
+PanGestureHandler: https://www.youtube.com/watch?v=Fd5FWxx7c48&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=7
+Color Picker https://www.youtube.com/watch?v=XH35ahDm3as&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=8
