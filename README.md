@@ -45,3 +45,11 @@ https://www.youtube.com/watch?v=FkY4bA8sZRo
 # Scheduler
 
 https://www.youtube.com/watch?v=F3KJNgINMIQ
+
+# Reanimated Tutorial
+
+https://www.youtube.com/watch?v=4HUreYYoE6U&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=2
+ScrolViewPrac: https://www.youtube.com/watch?v=SqwpRr7kbnQ&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=3
+Color: https://www.youtube.com/watch?v=U_V9pHnTXjA&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=4
+PinchGesture: https://www.youtube.com/watch?v=R7vyLItMQJw&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=5
+DoubleTab: https://www.youtube.com/watch?v=nbEmo0zLJjw&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=6
