@@ -9,6 +9,7 @@ import DoubleTapPrac from "./DoubleTapPrac";
 import PanGesturePrac from "./PanGesturePrac";
 import ColorPickerPrac from "./ColorPickerPrac";
 import CircularProgressPrac from "./CircularProgressPrac";
+import MyCircularProgressPrac from "./MyCircularProgressPrac";
 
 const ReanimatedTutorialContainer = () => {
   return (
@@ -22,7 +23,8 @@ const ReanimatedTutorialContainer = () => {
       {/* <DoubleTapPrac /> */}
       {/* <PanGesturePrac /> */}
       {/* <ColorPickerPrac /> */}
-      <CircularProgressPrac />
+      {/* <CircularProgressPrac /> */}
+      <MyCircularProgressPrac />
     </View>
   );
 };
