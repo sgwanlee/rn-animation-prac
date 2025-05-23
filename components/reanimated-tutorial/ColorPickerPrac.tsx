@@ -12,7 +12,10 @@ import Animated, {
   useAnimatedStyle,
   useDerivedValue,
   useSharedValue,
+  withDelay,
+  withSequence,
   withSpring,
+  withTiming,
 } from "react-native-reanimated";
 
 const COLORS = [
@@ -103,8 +106,15 @@ const ColorPicker = ({
     });
 
   const tapGesture = Gesture.Tap()
-    .onStart(() => {})
-    .onEnd(() => {});
+    .onStart((e) => {
+      translateY.value = withSequence(
+        withSpring(-CIRCLE_PICKER_SIZE, { duration: 300 }),
+        withSpring(0)
+      );
+      scale.value = withSequence(withSpring(1.2), withSpring(1));
+      translateX.value = withTiming(e.absoluteX - CIRCLE_PICKER_SIZE);
+    })
+    .onEnd((e) => {});
 
   return (
     <GestureDetector gesture={tapGesture}>
