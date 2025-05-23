@@ -11,6 +11,7 @@ import ColorPickerPrac from "./ColorPickerPrac";
 import CircularProgressPrac from "./CircularProgressPrac";
 import MyCircularProgressPrac from "./MyCircularProgressPrac";
 import SwipeToDeletePrac from "./SwipeToDeletePrac";
+import RippleEffect from "./RippleEffect";
 
 const ReanimatedTutorialContainer = () => {
   return (
@@ -26,7 +27,8 @@ const ReanimatedTutorialContainer = () => {
       {/* <ColorPickerPrac /> */}
       {/* <CircularProgressPrac /> */}
       {/* <MyCircularProgressPrac /> */}
-      <SwipeToDeletePrac />
+      {/* <SwipeToDeletePrac /> */}
+      <RippleEffect />
     </View>
   );
 };

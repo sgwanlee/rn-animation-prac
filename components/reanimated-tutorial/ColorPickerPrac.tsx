@@ -107,14 +107,16 @@ const ColorPicker = ({
 
   const tapGesture = Gesture.Tap()
     .onStart((e) => {
-      translateY.value = withSequence(
-        withSpring(-CIRCLE_PICKER_SIZE, { duration: 300 }),
-        withSpring(0)
-      );
-      scale.value = withSequence(withSpring(1.2), withSpring(1));
       translateX.value = withTiming(e.absoluteX - CIRCLE_PICKER_SIZE);
+      translateY.value = -CIRCLE_PICKER_SIZE;
+      scale.value = withSequence(
+        withDelay(100, withSpring(1.2)),
+        withDelay(500, withSpring(1))
+      );
     })
-    .onEnd((e) => {});
+    .onEnd((e) => {
+      translateY.value = 0;
+    });
 
   return (
     <GestureDetector gesture={tapGesture}>
