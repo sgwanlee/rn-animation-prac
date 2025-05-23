@@ -10,6 +10,7 @@ import PanGesturePrac from "./PanGesturePrac";
 import ColorPickerPrac from "./ColorPickerPrac";
 import CircularProgressPrac from "./CircularProgressPrac";
 import MyCircularProgressPrac from "./MyCircularProgressPrac";
+import SwipeToDeletePrac from "./SwipeToDeletePrac";
 
 const ReanimatedTutorialContainer = () => {
   return (
@@ -24,7 +25,8 @@ const ReanimatedTutorialContainer = () => {
       {/* <PanGesturePrac /> */}
       {/* <ColorPickerPrac /> */}
       {/* <CircularProgressPrac /> */}
-      <MyCircularProgressPrac />
+      {/* <MyCircularProgressPrac /> */}
+      <SwipeToDeletePrac />
     </View>
   );
 };
