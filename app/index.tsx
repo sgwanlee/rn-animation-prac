@@ -26,6 +26,7 @@ import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
+import ReanimatedTutorialContainer from "@/components/reanimated-tutorial/ReanimatedTutorialContainer";
 import ScheduleContainer from "@/components/scheduler/ScheduleContainer";
 import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
 import StickyContainer from "@/components/sticky/StickyContainer";
@@ -87,10 +88,7 @@ const Index = () => {
       {/* <MyCircularCarouselContainer /> */}
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
-      {/* <ClockContainer /> */}
-      {/* <MyClockContainer /> */}
-      {/* <StickyContainer /> */}
-      <MyStickyContainer />
+      <ReanimatedTutorialContainer />
     </View>
   );
 };
