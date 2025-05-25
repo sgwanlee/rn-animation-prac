@@ -29,6 +29,7 @@ import VerticalListContainer from "@/components/perflexity-vertical-list/Vertica
 import ReanimatedTutorialContainer from "@/components/reanimated-tutorial/ReanimatedTutorialContainer";
 import ScheduleContainer from "@/components/scheduler/ScheduleContainer";
 import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
+import SkiaTutorialContainer from "@/components/skia/SkiaTutorialContainer";
 import StickyContainer from "@/components/sticky/StickyContainer";
 import SwitchContainer from "@/components/switch/SwitchContainer";
 import TiktokMessageContainer from "@/components/tictok-messages/TiktokMessageContainer";
@@ -88,7 +89,8 @@ const Index = () => {
       {/* <MyCircularCarouselContainer /> */}
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
-      <ReanimatedTutorialContainer />
+      {/* <ReanimatedTutorialContainer /> */}
+      <SkiaTutorialContainer />
     </View>
   );
 };
