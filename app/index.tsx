@@ -6,6 +6,7 @@ import CounterContainer from "@/components/counter/CounterContainer";
 import CustomTabsContainer from "@/components/custom-tabs/CustomTabsContainer";
 import FlexTest from "@/components/FlexTest";
 import GalleryContainer from "@/components/gallery/GalleryContainer";
+import GameContainer from "@/components/game/GameContainer";
 import LeaderboardContainer from "@/components/leader_board/LeaderboardContainer";
 import LoadingContainer from "@/components/loading/LoadingContainer";
 import MyAppleInvitesContainer from "@/components/my-apple-invites/MyAppleInvitesContainer";
@@ -90,7 +91,8 @@ const Index = () => {
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
       {/* <ReanimatedTutorialContainer /> */}
-      <SkiaTutorialContainer />
+      {/* <SkiaTutorialContainer /> */}
+      <GameContainer />
     </View>
   );
 };

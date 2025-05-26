@@ -56,3 +56,7 @@ DoubleTab: https://www.youtube.com/watch?v=nbEmo0zLJjw&list=PLjHsmVtnAr9TWoMAh-3
 PanGestureHandler: https://www.youtube.com/watch?v=Fd5FWxx7c48&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=7
 Color Picker https://www.youtube.com/watch?v=XH35ahDm3as&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=8
 Circular Progress https://www.youtube.com/watch?v=9n2mQJ7TO6Y&list=PLjHsmVtnAr9TWoMAh-3QMiP7bPUqPFuFZ&index=10
+
+# Skia
+
+Chasing Bubble: https://www.youtube.com/watch?v=-KbdX_Xa-Gc&list=PLC_Hfj08XtG59wNm-rs6KbHyLfC09vaIN&index=2
