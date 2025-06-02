@@ -91,8 +91,8 @@ const Index = () => {
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
       {/* <ReanimatedTutorialContainer /> */}
-      {/* <SkiaTutorialContainer /> */}
-      <GameContainer />
+      <SkiaTutorialContainer />
+      {/* <GameContainer /> */}
     </View>
   );
 };
