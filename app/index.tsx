@@ -27,7 +27,6 @@ import Onboarding from "@/components/Onboarding";
 import Onboarding2 from "@/components/Onboarding/Onboarding2";
 import VerticalList from "@/components/perflexity-vertical-list/VerticalList";
 import VerticalListContainer from "@/components/perflexity-vertical-list/VerticalListContainer";
-import RainbowContainer from "@/components/rainbow/RainbowContainer";
 import ReanimatedTutorialContainer from "@/components/reanimated-tutorial/ReanimatedTutorialContainer";
 import ScheduleContainer from "@/components/scheduler/ScheduleContainer";
 import SharedElementsContainer from "@/components/shared-elements/SharedElementsContainer";
@@ -94,7 +93,6 @@ const Index = () => {
       {/* <ReanimatedTutorialContainer /> */}
       {/* <SkiaTutorialContainer /> */}
       {/* <GameContainer /> */}
-      <RainbowContainer />
     </View>
   );
 };
