@@ -60,3 +60,5 @@ Circular Progress https://www.youtube.com/watch?v=9n2mQJ7TO6Y&list=PLjHsmVtnAr9T
 # Skia
 
 Chasing Bubble: https://www.youtube.com/watch?v=-KbdX_Xa-Gc&list=PLC_Hfj08XtG59wNm-rs6KbHyLfC09vaIN&index=2
+Wallet: https://www.youtube.com/watch?v=xeLdmn3se1I
+Matrix: https://www.youtube.com/watch?v=49QR0wUDMG0
