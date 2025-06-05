@@ -12,6 +12,7 @@ import CircularProgressPrac from "./CircularProgressPrac";
 import MyCircularProgressPrac from "./MyCircularProgressPrac";
 import SwipeToDeletePrac from "./SwipeToDeletePrac";
 import RippleEffect from "./RippleEffect";
+import Tarot from "./tarot/Tarot";
 
 const ReanimatedTutorialContainer = () => {
   return (
@@ -28,7 +29,8 @@ const ReanimatedTutorialContainer = () => {
       {/* <CircularProgressPrac /> */}
       {/* <MyCircularProgressPrac /> */}
       {/* <SwipeToDeletePrac /> */}
-      <RippleEffect />
+      {/* <RippleEffect /> */}
+      <Tarot />
     </View>
   );
 };

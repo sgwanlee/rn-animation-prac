@@ -91,8 +91,8 @@ const Index = () => {
       {/* <MyCircularCarouselContainer /> */}
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
-      {/* <ReanimatedTutorialContainer /> */}
-      <SkiaTutorialContainer />
+      <ReanimatedTutorialContainer />
+      {/* <SkiaTutorialContainer /> */}
       {/* <GameContainer /> */}
       {/* <RainbowContainer /> */}
     </View>
