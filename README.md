@@ -63,3 +63,8 @@ Chasing Bubble: https://www.youtube.com/watch?v=-KbdX_Xa-Gc&list=PLC_Hfj08XtG59w
 Wallet: https://www.youtube.com/watch?v=xeLdmn3se1I
 Matrix: https://www.youtube.com/watch?v=49QR0wUDMG0
 Tarot: https://www.youtube.com/watch?v=xPbRsca_l7c
+
+# Shadow
+
+Shadow Generator
+https://ethercreative.github.io/react-native-shadow-generator/

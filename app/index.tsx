@@ -1,5 +1,6 @@
 import AppleInvitesContainer from "@/components/apple-invites/AppleInvitesContainer";
 import AvailabilityContainer from "@/components/availability/AvailabilityContainer";
+import CalendarContainer from "@/components/calendar/CalendarContainer";
 import CircularCarouselContainer from "@/components/circular-carousel/CircularCarouselContainer";
 import ClockContainer from "@/components/clock/ClockContainer";
 import CounterContainer from "@/components/counter/CounterContainer";
@@ -49,7 +50,7 @@ const Index = () => {
   const insets = useSafeAreaInsets();
   return (
     <View
-      className="flex-1 justify-center bg-white"
+      className="flex-1 bg-white"
       // style={{ paddingTop: insets.top }}
     >
       <Stack.Screen options={{ headerShown: false }} />
@@ -90,10 +91,11 @@ const Index = () => {
       {/* <MyCircularCarouselContainer /> */}
       {/* <ScheduleContainer /> */}
       {/* <MyScheduleContainer /> */}
-      <ReanimatedTutorialContainer />
+      {/* <ReanimatedTutorialContainer /> */}
       {/* <SkiaTutorialContainer /> */}
       {/* <GameContainer /> */}
       {/* <RainbowContainer /> */}
+      <CalendarContainer />
     </View>
   );
 };
